@@ -1,0 +1,21 @@
+name: Update readme
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # - name: Set up Python 3.11
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          sudo apt update && sudo apt install -y ffmpeg
+          python -m pip install --upgrade pip
+          pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple github-readme-terminal
+      - name: Run script
+        run: python main.py
