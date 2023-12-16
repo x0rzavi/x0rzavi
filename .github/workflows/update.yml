@@ -3,6 +3,9 @@ name: Update readme
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -26,7 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
-          
+
       - name: Update readme
         run: |
           git add README.md
