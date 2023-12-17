@@ -29,9 +29,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          GIFOS_GENERAL_COLOR_SCHEME: "rose-pine"
 
       - name: Update readme
         run: |
           git add README.md
-          git -c "user.name=bot" -c "user.email=bot@github.com" commit -m "Automatically updated"
+          git -c "user.name=bot" -c "user.email=bot@github.com" commit -m "Automatically updated on $(TZ='Asia/Kolkata' date)"
           git push
