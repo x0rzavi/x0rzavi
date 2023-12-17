@@ -84,7 +84,7 @@ def main():
     t.clear_frame()
     top_languages = [lang[0] for lang in git_user_details.languages_sorted]
     user_details_lines = f"""
-    \x1b[30;104mx0rzavi@GitHub\x1b[0m
+    \x1b[30;101mx0rzavi@GitHub\x1b[0m
     --------------
     \x1b[96mOS:     \x1b[93mArch/Gentoo Linux, Windows 11, Android 13\x1b[0m
     \x1b[96mHost:   \x1b[93mNetaji Subhash Engineering College \x1b[94m#NSEC\x1b[0m
@@ -92,12 +92,12 @@ def main():
     \x1b[96mUptime: \x1b[93m{user_age.years} years, {user_age.months} months, {user_age.days} days\x1b[0m
     \x1b[96mIDE:    \x1b[93mneovim, VSCode\x1b[0m
     
-    \x1b[30;104mContact:\x1b[0m
+    \x1b[30;101mContact:\x1b[0m
     --------------
     \x1b[96mEmail:      \x1b[93mx0rzavi@gmail.com\x1b[0m
     \x1b[96mLinkedIn:   \x1b[93mavishek-sen-x0rzavi\x1b[0m
     
-    \x1b[30;104mGitHub Stats:\x1b[0m
+    \x1b[30;101mGitHub Stats:\x1b[0m
     --------------
     \x1b[96mUser Rating: \x1b[93m{git_user_details.user_rank.level}\x1b[0m
     \x1b[96mTotal Stars Earned: \x1b[93m{git_user_details.total_stargazers}\x1b[0m
