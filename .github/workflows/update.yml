@@ -24,7 +24,7 @@ jobs:
         run: |
           sudo apt update && sudo apt install -y ffmpeg
           python -m pip install --upgrade pip
-          pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple github-readme-terminal
+          pip install github-readme-terminal
 
       - name: Run script
         run: python main.py
