@@ -16,8 +16,9 @@ def main():
 
     t.gen_text("", 1, count=20)
     t.toggle_show_cursor(False)
+    year_now = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y")
     t.gen_text("GIF_OS Modular BIOS v1.0.11", 1)
-    t.gen_text("Copyright (C) 2023, \x1b[31mX0rzAvi Softwares Inc.\x1b[0m", 2)
+    t.gen_text(f"Copyright (C) {year_now}, \x1b[31mX0rzAvi Softwares Inc.\x1b[0m", 2)
     t.gen_text("\x1b[94mGitHub Profile ReadMe Terminal, Rev 1011\x1b[0m", 4)
     t.gen_text("Krypton(tm) GIFCPU - 250Hz", 6)
     t.gen_text(
@@ -101,7 +102,7 @@ def main():
     --------------
     \x1b[96mUser Rating: \x1b[93m{git_user_details.user_rank.level}\x1b[0m
     \x1b[96mTotal Stars Earned: \x1b[93m{git_user_details.total_stargazers}\x1b[0m
-    \x1b[96mTotal Commits (2023): \x1b[93m{git_user_details.total_commits_last_year}\x1b[0m
+    \x1b[96mTotal Commits ({int(year_now) - 1}): \x1b[93m{git_user_details.total_commits_last_year}\x1b[0m
     \x1b[96mTotal PRs: \x1b[93m{git_user_details.total_pull_requests_made}\x1b[0m
     \x1b[96mMerged PR %: \x1b[93m{git_user_details.pull_requests_merge_percentage}\x1b[0m
     \x1b[96mTotal Contributions: \x1b[93m{git_user_details.total_repo_contributions}\x1b[0m
@@ -154,8 +155,8 @@ def main():
         t.curr_row,
         contin=True,
     )
-    t.save_frame("fetch_details.png")
-    t.gen_text("", t.curr_row, count=80, contin=True)
+    # t.save_frame("fetch_details.png")
+    t.gen_text("", t.curr_row, count=120, contin=True)
 
     t.gen_gif()
     image = gifos.utils.upload_imgbb("output.gif", 129600)  # 1.5 days expiration
@@ -175,8 +176,8 @@ def main():
 </div>
 
 <!-- Image deletion URL: {image.delete_url} -->"""
-    with open("README.md", "w") as fp:
-        fp.write(readme_file_content)
+    with open("README.md", "w") as f:
+        f.write(readme_file_content)
         print("INFO: README.md file generated")
 
 

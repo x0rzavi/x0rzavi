@@ -32,6 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           GIFOS_GENERAL_COLOR_SCHEME: "yoru"
+          GIFOS_GENERAL_FPS: 13
 
       - name: Update readme
         run: |
