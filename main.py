@@ -86,7 +86,7 @@ def main():
     user_details_lines = f"""
     \x1b[30;101mx0rzavi@GitHub\x1b[0m
     --------------
-    \x1b[96mOS:     \x1b[93mArch/Gentoo Linux, Windows 11, Android 13\x1b[0m
+    \x1b[96mOS:     \x1b[93mArch/Gentoo Linux, Windows 11, Android 14\x1b[0m
     \x1b[96mHost:   \x1b[93mNetaji Subhash Engineering College \x1b[94m#NSEC\x1b[0m
     \x1b[96mKernel: \x1b[93mComputer Science & Engineering \x1b[94m#CSE\x1b[0m
     \x1b[96mUptime: \x1b[93m{user_age.years} years, {user_age.months} months, {user_age.days} days\x1b[0m
