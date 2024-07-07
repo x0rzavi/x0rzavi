@@ -168,10 +168,10 @@ def main():
 
 <sub><i>Generated automatically using [x0rzavi/github-readme-terminal](https://github.com/x0rzavi/github-readme-terminal) on {time_now}</i></sub>
 
-<details>
+<!-- <details>
 <summary>More details</summary>
 
-</details>
+</details> -->
 </div>
 
 <!-- Image deletion URL: {image.delete_url} -->"""
