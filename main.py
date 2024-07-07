@@ -95,7 +95,7 @@ def main():
     \x1b[30;101mContact:\x1b[0m
     --------------
     \x1b[96mEmail:      \x1b[93mx0rzavi@gmail.com\x1b[0m
-    \x1b[96mLinkedIn:   \x1b[93mavishek-sen-x0rzavi\x1b[0m
+    \x1b[96mLinkedIn:   \x1b[93msen-avishek\x1b[0m
     
     \x1b[30;101mGitHub Stats:\x1b[0m
     --------------
