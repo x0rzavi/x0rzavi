@@ -174,7 +174,7 @@ def main():
 </details> -->
 </div>
 
-<!-- Image deletion URL: {image.delete_url} -->"""
+<!-- Image deletion URL: NONE -->"""
     with open("README.md", "w") as f:
         f.write(readme_file_content)
         print("INFO: README.md file generated")
