@@ -158,11 +158,11 @@ def main():
     t.gen_text("", t.curr_row, count=120, contin=True)
 
     t.gen_gif()
-    image = gifos.utils.upload_imgbb("output.gif", 129600)  # 1.5 days expiration
+    # image = gifos.utils.upload_imgbb("output.gif", 129600)  # 1.5 days expiration
     readme_file_content = rf"""<div align="justify">
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="{image.url}">
-    <source media="(prefers-color-scheme: light)" srcset="{image.url}">
+    <source media="(prefers-color-scheme: dark)" srcset="output.gif">
+    <source media="(prefers-color-scheme: light)" srcset="output.gif">
     <img alt="GIFOS" src="{image.url}">
 </picture>
 
