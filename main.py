@@ -1,7 +1,7 @@
 from datetime import datetime
-from zoneinfo import ZoneInfo
 
 import gifos
+from zoneinfo import ZoneInfo
 
 FONT_FILE_LOGO = "./fonts/vtks-blocketo.regular.ttf"
 # FONT_FILE_BITMAP = "./fonts/ter-u14n.pil"
@@ -161,8 +161,8 @@ def main():
     # image = gifos.utils.upload_imgbb("output.gif", 129600)  # 1.5 days expiration
     readme_file_content = rf"""<div align="justify">
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="output.gif">
-    <source media="(prefers-color-scheme: light)" srcset="output.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
+    <source media="(prefers-color-scheme: light)" srcset="./output.gif">
     <img alt="GIFOS" src="output.gif">
 </picture>
 
