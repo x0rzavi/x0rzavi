@@ -38,5 +38,5 @@ jobs:
       - name: Update readme
         run: |
           git add README.md output.gif
-          git -c "user.name=bot" -c "user.email=bot@github.com" commit -m "Automatically updated on $(TZ='Asia/Kolkata' date)"
+          git -c "user.name=bot" -c "user.email=bot@github.com" commit -m "Automatically updated on $(TZ='Asia/Karachi' date)"
           git push
