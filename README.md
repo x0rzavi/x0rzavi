@@ -2,10 +2,10 @@
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
     <source media="(prefers-color-scheme: light)" srcset="./output.gif">
-    <img alt="GIFOS" src="output.gif">
+    <img alt="KITSUNE OS" src="output.gif">
 </picture>
 
-<sub><i>Generated automatically using [x0rzavi/github-readme-terminal](https://github.com/x0rzavi/github-readme-terminal) on Fri Aug 28 04:21:50 PM IST 2026</i></sub>
+<sub><i>Generated automatically for <b>Saad Yousuf</b> ([bluekitsune-sad](https://github.com/bluekitsune-sad)) on Fri Aug 28 11:35:37 PM PKT 2026</i></sub>
 
 <!-- <details>
 <summary>More details</summary>
