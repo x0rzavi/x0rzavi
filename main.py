@@ -12,6 +12,7 @@ FONT_FILE_MONA = "./fonts/Inversionz.otf"
 
 def main():
     t = gifos.Terminal(750, 500, 15, 15, FONT_FILE_BITMAP, 15)
+    t.set_prompt("\x1b[0;91msad\x1b[0m@\x1b[0;93mkitsune ~> \x1b[0m")
 
     t.gen_text("", 1, count=20)
     t.toggle_show_cursor(False)
@@ -43,16 +44,11 @@ def main():
     t.set_font(FONT_FILE_LOGO, 66)
     # t.toggle_show_cursor(True)
     os_logo_text = "SAAD"
-    effect_lines = gifos.effects.text_scramble_effect_lines(
-        os_logo_text, 3, include_special=False
-    )
     mid_row = (t.num_rows + 1) // 2
     mid_col = t.num_cols // 2
     start_row = mid_row - len(os_logo_text) // 2
-    for line in effect_lines:
-        for i, ch in enumerate(line):
-            t.delete_row(start_row + i + 1)
-            t.gen_text(ch, start_row + i + 1, mid_col + 1)
+    for i, ch in enumerate(os_logo_text):
+        t.gen_text(ch, start_row + i + 1, mid_col + 1, count=5)
 
     t.set_font(FONT_FILE_BITMAP, 15)
     t.clear_frame()
