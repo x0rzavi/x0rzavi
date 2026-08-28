@@ -24,7 +24,7 @@ jobs:
         run: |
           sudo apt update && sudo apt install -y ffmpeg
           python -m pip install --upgrade pip
-          pip install git+https://github.com/x0rzavi/github-readme-terminal.git@main
+          pip install git+https://github.com/bluekitsune-sad/github-readme-terminal.git@main
 
       - name: Run script
         run: python main.py
